@@ -5,7 +5,7 @@
     "tpr_macro": 0.8,
     "fpr": 0.0029295774647887323,
     "mttd_median_seconds": 167.444369,
-    "mitigation_rate": 0.994884301945155,
+    "ssh_probe_unreachable_rate": 0.994884301945155,
     "ar_latency_seconds_median": 17.778,
     "lab_window": [
       "2026-05-15T12:29:39.808000+02:00",
@@ -185,128 +185,128 @@
   ],
   "active_response": {
     "ar_triggers": 16811,
-    "ar_successes": 16725,
-    "mitigation_rate": 0.994884301945155,
+    "ar_probe_unreachable": 16725,
+    "ssh_probe_unreachable_rate": 0.994884301945155,
     "examples": [
       {
         "ts": "2026-05-15T10:50:29.819Z",
         "rule": "100210",
         "srcip": "10.0.0.2",
-        "success": 1
+        "probe_unreachable": 1
       },
       {
         "ts": "2026-05-15T10:50:32.834Z",
         "rule": "100210",
         "srcip": "10.0.0.2",
-        "success": 1
+        "probe_unreachable": 1
       },
       {
         "ts": "2026-05-15T10:50:35.850Z",
         "rule": "100210",
         "srcip": "10.0.0.2",
-        "success": 1
+        "probe_unreachable": 1
       },
       {
         "ts": "2026-05-15T10:50:38.867Z",
         "rule": "100210",
         "srcip": "10.0.0.2",
-        "success": 1
+        "probe_unreachable": 1
       },
       {
         "ts": "2026-05-15T10:55:26.104Z",
         "rule": "100210",
         "srcip": "10.0.0.2",
-        "success": 0
+        "probe_unreachable": 0
       },
       {
         "ts": "2026-05-15T10:55:26.120Z",
         "rule": "100210",
         "srcip": "10.0.0.2",
-        "success": 0
+        "probe_unreachable": 0
       },
       {
         "ts": "2026-05-15T10:55:30.110Z",
         "rule": "100210",
         "srcip": "10.0.0.2",
-        "success": 0
+        "probe_unreachable": 0
       },
       {
         "ts": "2026-05-15T10:55:30.126Z",
         "rule": "100210",
         "srcip": "10.0.0.2",
-        "success": 0
+        "probe_unreachable": 0
       },
       {
         "ts": "2026-05-15T10:55:34.216Z",
         "rule": "100210",
         "srcip": "10.0.0.2",
-        "success": 0
+        "probe_unreachable": 0
       },
       {
         "ts": "2026-05-15T10:55:34.233Z",
         "rule": "100210",
         "srcip": "10.0.0.2",
-        "success": 0
+        "probe_unreachable": 0
       },
       {
         "ts": "2026-05-15T10:55:38.113Z",
         "rule": "100210",
         "srcip": "10.0.0.2",
-        "success": 0
+        "probe_unreachable": 0
       },
       {
         "ts": "2026-05-15T10:55:38.128Z",
         "rule": "100210",
         "srcip": "10.0.0.2",
-        "success": 0
+        "probe_unreachable": 0
       },
       {
         "ts": "2026-05-15T10:55:40.178Z",
         "rule": "100210",
         "srcip": "10.0.0.2",
-        "success": 0
+        "probe_unreachable": 0
       },
       {
         "ts": "2026-05-15T10:55:40.196Z",
         "rule": "100210",
         "srcip": "10.0.0.2",
-        "success": 0
+        "probe_unreachable": 0
       },
       {
         "ts": "2026-05-15T10:55:46.112Z",
         "rule": "100210",
         "srcip": "10.0.0.2",
-        "success": 0
+        "probe_unreachable": 0
       },
       {
         "ts": "2026-05-15T10:55:46.128Z",
         "rule": "100210",
         "srcip": "10.0.0.2",
-        "success": 0
+        "probe_unreachable": 0
       },
       {
         "ts": "2026-05-15T10:56:16.142Z",
         "rule": "100210",
         "srcip": "10.0.0.2",
-        "success": 0
+        "probe_unreachable": 0
       },
       {
         "ts": "2026-05-15T10:56:16.157Z",
         "rule": "100210",
         "srcip": "10.0.0.2",
-        "success": 0
+        "probe_unreachable": 0
       },
       {
         "ts": "2026-05-15T10:56:18.155Z",
         "rule": "100210",
         "srcip": "10.0.0.2",
-        "success": 0
+        "probe_unreachable": 0
       },
       {
         "ts": "2026-05-15T10:56:18.172Z",
         "rule": "100210",
         "srcip": "10.0.0.2",
-        "success": 0
+        "probe_unreachable": 0
       }
     ]
   },
@@ -315,6 +315,6 @@
     "fp": "Any Wazuh alert with rule.level >= 7 outside every scenario window",
     "fn": "Scenario whose window produced zero bachsiem_scenarioN alerts",
     "mttd": "Median (wazuh_alert_ts - earliest_suricata_or_window_start) per scenario",
-    "mitigation_rate": "bachsiem-ar.log success:1 / total triggers inside scenario windows"
+    "ssh_probe_unreachable_rate": "bachsiem-ar.log probe_unreachable:1 / total triggers; Anteil fehlschlagender TCP/22-Proben Agent->Quell-IP nach Active Response (SSH-Erreichbarkeit), KEIN Beleg fuer Block-Wirkung am Victim"
   }
 }
