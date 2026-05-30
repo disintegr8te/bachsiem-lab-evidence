@@ -1,0 +1,433 @@
+{
+  "timestamp": "2026-05-15T12:29:39.808+0200",
+  "agent": {
+    "id": "001",
+    "name": "bachsiem-victim-web",
+    "ip": "10.0.0.3"
+  },
+  "manager": {
+    "name": "bachsiem-siem"
+  },
+  "id": "1778840979.221163",
+  "full_log": "{\"timestamp\":\"2026-05-15T12:29:38.116393+0200\",\"event_type\":\"stats\",\"stats\":{\"uptime\":1073,\"capture\":{\"kernel_packets\":59679,\"kernel_drops\":0,\"errors\":0,\"afpacket\":{\"busy_loop_avg\":0,\"polls\":73763,\"po...[truncated]",
+  "decoder": {
+    "name": "json"
+  },
+  "data": {
+    "timestamp": "2026-05-15T12:29:38.116393+0200",
+    "event_type": "stats",
+    "stats": {
+      "uptime": "1073",
+      "capture": {
+        "kernel_packets": "59679",
+        "kernel_drops": "0",
+        "errors": "0",
+        "afpacket": {
+          "busy_loop_avg": "0",
+          "polls": "73763",
+          "poll_signal": "0",
+          "poll_timeout": "42291",
+          "poll_data": "31472",
+          "poll_errors": "0",
+          "send_errors": "0"
+        }
+      },
+      "decoder": {
+        "pkts": "59679",
+        "bytes": "343521269",
+        "invalid": "28854",
+        "ipv4": "2099",
+        "ipv6": "57562",
+        "ethernet": "59679",
+        "arp": "18",
+        "unknown_ethertype": "0",
+        "chdlc": "0",
+        "raw": "0",
+        "null": "0",
+        "sll": "0",
+        "tcp": "30508",
+        "udp": "264",
+        "sctp": "0",
+        "esp": "0",
+        "icmpv4": "0",
+        "icmpv6": "35",
+        "ppp": "0",
+        "pppoe": "0",
+        "geneve": "0",
+        "gre": "0",
+        "vlan": "0",
+        "vlan_qinq": "0",
+        "vlan_qinqinq": "0",
+        "vxlan": "0",
+        "vntag": "0",
+        "ieee8021ah": "0",
+        "teredo": "0",
+        "ipv4_in_ipv4": "0",
+        "ipv6_in_ipv4": "0",
+        "ipv4_in_ipv6": "0",
+        "ipv6_in_ipv6": "0",
+        "mpls": "0",
+        "avg_pkt_size": "5756",
+        "max_pkt_size": "9226",
+        "max_mac_addrs_src": "0",
+        "max_mac_addrs_dst": "0",
+        "erspan": "0",
+        "nsh": "0",
+        "event": {
+          "afpacket": {
+            "trunc_pkt": "28854"
+          },
+          "ipv4": {
+            "pkt_too_small": "0",
+            "hlen_too_small": "0",
+            "iplen_smaller_than_hlen": "0",
+            "trunc_pkt": "129",
+            "opt_invalid": "0",
+            "opt_invalid_len": "0",
+            "opt_malformed": "0",
+            "opt_pad_required": "0",
+            "opt_eol_required": "0",
+            "opt_duplicate": "0",
+            "opt_unknown": "0",
+            "wrong_ip_version": "0",
+            "icmpv6": "0",
+            "frag_pkt_too_large": "0",
+            "frag_overlap": "0",
+            "frag_ignored": "0"
+          },
+          "icmpv4": {
+            "pkt_too_small": "0",
+            "unknown_type": "0",
+            "unknown_code": "0",
+            "ipv4_trunc_pkt": "0",
+            "ipv4_unknown_ver": "0"
+          },
+          "icmpv6": {
+            "unknown_type": "0",
+            "unknown_code": "0",
+            "pkt_too_small": "0",
+            "ipv6_unknown_version": "0",
+            "ipv6_trunc_pkt": "0",
+            "mld_message_with_invalid_hl": "0",
+            "unassigned_type": "0",
+            "experimentation_type": "0"
+          },
+          "ipv6": {
+            "pkt_too_small": "0",
+            "trunc_pkt": "28725",
+            "trunc_exthdr": "0",
+            "exthdr_dupl_fh": "0",
+            "exthdr_useless_fh": "0",
+            "exthdr_dupl_rh": "0",
+            "exthdr_dupl_hh": "0",
+            "exthdr_dupl_dh": "0",
+            "exthdr_dupl_ah": "0",
+            "exthdr_dupl_eh": "0",
+            "exthdr_invalid_optlen": "0",
+            "wrong_ip_version": "0",
+            "exthdr_ah_res_not_null": "0",
+            "hopopts_unknown_opt": "0",
+            "hopopts_only_padding": "0",
+            "dstopts_unknown_opt": "0",
+            "dstopts_only_padding": "0",
+            "rh_type_0": "0",
+            "zero_len_padn": "0",
+            "fh_non_zero_reserved_field": "0",
+            "data_after_none_header": "0",
+            "unknown_next_header": "0",
+            "icmpv4": "0",
+            "frag_pkt_too_large": "0",
+            "frag_overlap": "0",
+            "frag_invalid_length": "0",
+            "frag_ignored": "0",
+            "ipv4_in_ipv6_too_small": "0",
+            "ipv4_in_ipv6_wrong_version": "0",
+            "ipv6_in_ipv6_too_small": "0",
+            "ipv6_in_ipv6_wrong_version": "0"
+          },
+          "tcp": {
+            "pkt_too_small": "0",
+            "hlen_too_small": "0",
+            "invalid_optlen": "0",
+            "opt_invalid_len": "0",
+            "opt_duplicate": "0"
+          },
+          "udp": {
+            "pkt_too_small": "0",
+            "hlen_too_small": "0",
+            "hlen_invalid": "0",
+            "len_invalid": "0"
+          },
+          "sll": {
+            "pkt_too_small": "0"
+          },
+          "ethernet": {
+            "pkt_too_small": "0"
+          },
+          "ppp": {
+            "pkt_too_small": "0",
+            "vju_pkt_too_small": "0",
+            "ip4_pkt_too_small": "0",
+            "ip6_pkt_too_small": "0",
+            "wrong_type": "0",
+            "unsup_proto": "0"
+          },
+          "pppoe": {
+            "pkt_too_small": "0",
+            "wrong_code": "0",
+            "malformed_tags": "0"
+          },
+          "gre": {
+            "pkt_too_small": "0",
+            "wrong_version": "0",
+            "version0_recur": "0",
+            "version0_flags": "0",
+            "version0_hdr_too_big": "0",
+            "version0_malformed_sre_hdr": "0",
+            "version1_chksum": "0",
+            "version1_route": "0",
+            "version1_ssr": "0",
+            "version1_recur": "0",
+            "version1_flags": "0",
+            "version1_no_key": "0",
+            "version1_wrong_protocol": "0",
+            "version1_malformed_sre_hdr": "0",
+            "version1_hdr_too_big": "0"
+          },
+          "vlan": {
+            "header_too_small": "0",
+            "unknown_type": "0",
+            "too_many_layers": "0"
+          },
+          "ieee8021ah": {
+            "header_too_small": "0"
+          },
+          "vntag": {
+            "header_too_small": "0",
+            "unknown_type": "0"
+          },
+          "ipraw": {
+            "invalid_ip_version": "0"
+          },
+          "ltnull": {
+            "pkt_too_small": "0",
+            "unsupported_type": "0"
+          },
+          "sctp": {
+            "pkt_too_small": "0"
+          },
+          "esp": {
+            "pkt_too_small": "0"
+          },
+          "mpls": {
+            "header_too_small": "0",
+            "pkt_too_small": "0",
+            "bad_label_router_alert": "0",
+            "bad_label_implicit_null": "0",
+            "bad_label_reserved": "0",
+            "unknown_payload_type": "0"
+          },
+          "vxlan": {
+            "unknown_payload_type": "0"
+          },
+          "geneve": {
+            "unknown_payload_type": "0"
+          },
+          "erspan": {
+            "header_too_small": "0",
+            "unsupported_version": "0",
+            "too_many_vlan_layers": "0"
+          },
+          "dce": {
+            "pkt_too_small": "0"
+          },
+          "chdlc": {
+            "pkt_too_small": "0"
+          },
+          "nsh": {
+            "header_too_small": "0",
+            "unsupported_version": "0",
+            "bad_header_length": "0",
+            "reserved_type": "0",
+            "unsupported_type": "0",
+            "unknown_payload": "0"
+          }
+        },
+        "too_many_layers": "0"
+      },
+      "tcp": {
+        "syn": "186",
+        "synack": "186",
+        "rst": "22",
+        "urg": "0",
+        "active_sessions": "3",
+        "sessions": "186",
+        "ssn_memcap_drop": "0",
+        "ssn_from_cache": "21",
+        "ssn_from_pool": "165",
+        "pseudo": "62",
+        "pseudo_failed": "0",
+        "invalid_checksum": "0",
+        "midstream_pickups": "0",
+        "pkt_on_wrong_thread": "0",
+        "ack_unseen_data": "7777",
+        "segment_memcap_drop": "0",
+        "segment_from_cache": "2209",
+        "segment_from_pool": "163",
+        "stream_depth_reached": "0",
+        "reassembly_gap": "32",
+        "overlap": "1",
+        "overlap_diff_data": "0",
+        "insert_data_normal_fail": "0",
+        "insert_data_overlap_fail": "0",
+        "urgent_oob_data": "0",
+        "memuse": "2490368",
+        "reassembly_memuse": "458752"
+      },
+      "flow": {
+        "memcap": "0",
+        "total": "321",
+        "active": "33",
+        "tcp": "187",
+        "udp": "132",
+        "icmpv4": "0",
+        "icmpv6": "2",
+        "tcp_reuse": "0",
+        "get_used": "0",
+        "get_used_eval": "0",
+        "get_used_eval_reject": "0",
+        "get_used_eval_busy": "0",
+        "get_used_failed": "0",
+        "wrk": {
+          "spare_sync_avg": "100",
+          "spare_sync": "4",
+          "spare_sync_incomplete": "0",
+          "spare_sync_empty": "0",
+          "flows_evicted_needs_work": "44",
+          "flows_evicted_pkt_inject": "77",
+          "flows_evicted": "0",
+          "flows_injected": "44",
+          "flows_injected_max": "0"
+        },
+        "end": {
+          "state": {
+            "new": "2",
+            "established": "103",
+            "closed": "183",
+            "local_bypassed": "0",
+            "capture_bypassed": "0"
+          },
+          "tcp_state": {
+            "none": "0",
+            "syn_sent": "0",
+            "syn_recv": "0",
+            "established": "0",
+            "fin_wait1": "0",
+            "fin_wait2": "0",
+            "time_wait": "0",
+            "last_ack": "0",
+            "close_wait": "0",
+            "closing": "0",
+            "closed": "183"
+          },
+          "tcp_liberal": "32"
+        },
+        "mgr": {
+          "full_hash_pass": "107",
+          "rows_per_sec": "6553",
+          "rows_maxlen": "1",
+          "flows_checked": "701",
+          "flows_notimeout": "413",
+          "flows_timeout": "288",
+          "flows_evicted": "288",
+          "flows_evicted_needs_work": "44"
+        },
+        "spare": "9844",
+        "emerg_mode_entered": "0"
+      }
+    }
+  },
+  "location": "/var/log/suricata/eve.json"
+}
+{
+  "timestamp": "2026-05-15T12:29:41.809+0200",
+  "agent": {
+    "id": "001",
+    "name": "bachsiem-victim-web",
+    "ip": "10.0.0.3"
+  },
+  "manager": {
+    "name": "bachsiem-siem"
+  },
+  "id": "1778840981.221163",
+  "full_log": "{\"timestamp\":\"2026-05-15T12:29:40.737999+0200\",\"flow_id\":760245658258233,\"in_iface\":\"eth0\",\"event_type\":\"flow\",\"src_ip\":\"178.105.92.58\",\"src_port\":56866,\"dest_ip\":\"185.207.105.38\",\"dest_port\":123,\"pro...[truncated]",
+  "decoder": {
+    "name": "json"
+  },
+  "data": {
+    "timestamp": "2026-05-15T12:29:40.737999+0200",
+    "flow_id": "760245658258233.000000",
+    "in_iface": "eth0",
+    "event_type": "flow",
+    "src_ip": "178.105.92.58",
+    "src_port": "56866",
+    "dest_ip": "185.207.105.38",
+    "dest_port": "123",
+    "proto": "UDP",
+    "app_proto": "ntp",
+    "flow": {
+      "pkts_toserver": "1",
+      "pkts_toclient": "1",
+      "bytes_toserver": "90",
+      "bytes_toclient": "90",
+      "start": "2026-05-15T12:24:34.766832+0200",
+      "end": "2026-05-15T12:24:34.767654+0200",
+      "age": "0",
+      "state": "established",
+      "reason": "timeout",
+      "alerted": "false"
+    }
+  },
+  "location": "/var/log/suricata/eve.json"
+}
+{
+  "timestamp": "2026-05-15T12:29:41.809+0200",
+  "agent": {
+    "id": "001",
+    "name": "bachsiem-victim-web",
+    "ip": "10.0.0.3"
+  },
+  "manager": {
+    "name": "bachsiem-siem"
+  },
+  "id": "1778840981.221163",
+  "full_log": "{\"timestamp\":\"2026-05-15T12:29:40.738059+0200\",\"flow_id\":2187974187226015,\"in_iface\":\"eth0\",\"event_type\":\"flow\",\"src_ip\":\"2a01:04f8:1c1c:e63b:0000:0000:0000:0001\",\"src_port\":40462,\"dest_ip\":\"2a02:16d0...[truncated]",
+  "decoder": {
+    "name": "json"
+  },
+  "data": {
+    "timestamp": "2026-05-15T12:29:40.738059+0200",
+    "flow_id": "2187974187226015.000000",
+    "in_iface": "eth0",
+    "event_type": "flow",
+    "src_ip": "2a01:04f8:1c1c:e63b:0000:0000:0000:0001",
+    "src_port": "40462",
+    "dest_ip": "2a02:16d0:0000:0004:0000:0000:0000:0004",
+    "dest_port": "123",
+    "proto": "UDP",
+    "app_proto": "ntp",
+    "flow": {
+      "pkts_toserver": "1",
+      "pkts_toclient": "1",
+      "bytes_toserver": "110",
+      "bytes_toclient": "110",
+      "start": "2026-05-15T12:24:31.050675+0200",
+      "end": "2026-05-15T12:24:31.061776+0200",
+      "age": "0",
+      "state": "established",
+      "reason": "timeout",
+      "alerted": "false"
+    }
+  },
+  "location": "/var/log/suricata/eve.json"
+}

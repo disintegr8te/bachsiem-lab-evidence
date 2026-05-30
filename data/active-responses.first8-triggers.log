@@ -1,0 +1,1084 @@
+2026/05/15 12:50:29 active-response/bin/firewall-drop: Starting
+2026/05/15 12:50:29 active-response/bin/firewall-drop:
+{
+  "version": 1,
+  "origin": {
+    "name": "node01",
+    "module": "wazuh-execd"
+  },
+  "command": "add",
+  "parameters": {
+    "extra_args": [],
+    "alert": {
+      "timestamp": "2026-05-15T12:50:29.788+0200",
+      "rule": {
+        "level": 12,
+        "description": "bachsiem: SSH brute force - 8+ failed logins in 2 min",
+        "id": "100210",
+        "mitre": {
+          "id": [
+            "T1110.001"
+          ],
+          "tactic": [
+            "Credential Access"
+          ],
+          "technique": [
+            "Password Guessing"
+          ]
+        },
+        "frequency": 8,
+        "firedtimes": 1,
+        "mail": true,
+        "groups": [
+          "bachsiem",
+          "local",
+          "authentication_failures",
+          "bachsiem_scenario1"
+        ]
+      },
+      "agent": {
+        "id": "001",
+        "name": "bachsiem-victim-web",
+        "ip": "10.0.0.3"
+      },
+      "manager": {
+        "name": "bachsiem-siem"
+      },
+      "id": "1778842229.275572",
+      "previous_output": "2026-05-15T12:50:27.905623+02:00 bachsiem-victim-web sshd[3296]: Failed password...[truncated]",
+      "full_log": "2026-05-15T12:50:27.907411+02:00 bachsiem-victim-web sshd[3294]: Failed password...[truncated]",
+      "predecoder": {
+        "program_name": "sshd",
+        "timestamp": "2026-05-15T12:50:27.907411+02:00"
+      },
+      "decoder": {
+        "parent": "sshd",
+        "name": "sshd"
+      },
+      "data": {
+        "srcip": "10.0.0.2",
+        "srcport": "44202",
+        "dstuser": "testuser"
+      },
+      "location": "/var/log/auth.log"
+    },
+    "program": "active-response/bin/firewall-drop"
+  }
+}
+2026/05/15 12:50:29 active-response/bin/firewall-drop: {"version":1,"origin":{"name":"firewall-drop","module":"active-response"},"command":"check_keys","parameters":{"keys":["10.0.0.2"]}}
+2026/05/15 12:50:29 active-response/bin/firewall-drop:
+{
+  "version": 1,
+  "origin": {
+    "name": "node01",
+    "module": "wazuh-execd"
+  },
+  "command": "continue",
+  "parameters": {
+    "extra_args": [],
+    "alert": {
+      "timestamp": "2026-05-15T12:50:29.788+0200",
+      "rule": {
+        "level": 12,
+        "description": "bachsiem: SSH brute force - 8+ failed logins in 2 min",
+        "id": "100210",
+        "mitre": {
+          "id": [
+            "T1110.001"
+          ],
+          "tactic": [
+            "Credential Access"
+          ],
+          "technique": [
+            "Password Guessing"
+          ]
+        },
+        "frequency": 8,
+        "firedtimes": 1,
+        "mail": true,
+        "groups": [
+          "bachsiem",
+          "local",
+          "authentication_failures",
+          "bachsiem_scenario1"
+        ]
+      },
+      "agent": {
+        "id": "001",
+        "name": "bachsiem-victim-web",
+        "ip": "10.0.0.3"
+      },
+      "manager": {
+        "name": "bachsiem-siem"
+      },
+      "id": "1778842229.275572",
+      "previous_output": "2026-05-15T12:50:27.905623+02:00 bachsiem-victim-web sshd[3296]: Failed password...[truncated]",
+      "full_log": "2026-05-15T12:50:27.907411+02:00 bachsiem-victim-web sshd[3294]: Failed password...[truncated]",
+      "predecoder": {
+        "program_name": "sshd",
+        "timestamp": "2026-05-15T12:50:27.907411+02:00"
+      },
+      "decoder": {
+        "parent": "sshd",
+        "name": "sshd"
+      },
+      "data": {
+        "srcip": "10.0.0.2",
+        "srcport": "44202",
+        "dstuser": "testuser"
+      },
+      "location": "/var/log/auth.log"
+    },
+    "program": "active-response/bin/firewall-drop"
+  }
+}
+2026/05/15 12:50:29 active-response/bin/firewall-drop: Ended
+2026/05/15 12:50:32 active-response/bin/firewall-drop: Starting
+2026/05/15 12:50:32 active-response/bin/firewall-drop:
+{
+  "version": 1,
+  "origin": {
+    "name": "node01",
+    "module": "wazuh-execd"
+  },
+  "command": "add",
+  "parameters": {
+    "extra_args": [],
+    "alert": {
+      "timestamp": "2026-05-15T12:50:29.788+0200",
+      "rule": {
+        "level": 12,
+        "description": "bachsiem: SSH brute force - 8+ failed logins in 2 min",
+        "id": "100210",
+        "mitre": {
+          "id": [
+            "T1110.001"
+          ],
+          "tactic": [
+            "Credential Access"
+          ],
+          "technique": [
+            "Password Guessing"
+          ]
+        },
+        "frequency": 8,
+        "firedtimes": 1,
+        "mail": true,
+        "groups": [
+          "bachsiem",
+          "local",
+          "authentication_failures",
+          "bachsiem_scenario1"
+        ]
+      },
+      "agent": {
+        "id": "001",
+        "name": "bachsiem-victim-web",
+        "ip": "10.0.0.3"
+      },
+      "manager": {
+        "name": "bachsiem-siem"
+      },
+      "id": "1778842229.275572",
+      "previous_output": "2026-05-15T12:50:27.905623+02:00 bachsiem-victim-web sshd[3296]: Failed password...[truncated]",
+      "full_log": "2026-05-15T12:50:27.907411+02:00 bachsiem-victim-web sshd[3294]: Failed password...[truncated]",
+      "predecoder": {
+        "program_name": "sshd",
+        "timestamp": "2026-05-15T12:50:27.907411+02:00"
+      },
+      "decoder": {
+        "parent": "sshd",
+        "name": "sshd"
+      },
+      "data": {
+        "srcip": "10.0.0.2",
+        "srcport": "44202",
+        "dstuser": "testuser"
+      },
+      "location": "/var/log/auth.log"
+    },
+    "program": "active-response/bin/firewall-drop"
+  }
+}
+2026/05/15 12:50:32 active-response/bin/firewall-drop: {"version":1,"origin":{"name":"firewall-drop","module":"active-response"},"command":"check_keys","parameters":{"keys":["10.0.0.2"]}}
+2026/05/15 12:50:32 active-response/bin/firewall-drop:
+{
+  "version": 1,
+  "origin": {
+    "name": "node01",
+    "module": "wazuh-execd"
+  },
+  "command": "abort",
+  "parameters": {
+    "extra_args": [],
+    "alert": {
+      "timestamp": "2026-05-15T12:50:29.788+0200",
+      "rule": {
+        "level": 12,
+        "description": "bachsiem: SSH brute force - 8+ failed logins in 2 min",
+        "id": "100210",
+        "mitre": {
+          "id": [
+            "T1110.001"
+          ],
+          "tactic": [
+            "Credential Access"
+          ],
+          "technique": [
+            "Password Guessing"
+          ]
+        },
+        "frequency": 8,
+        "firedtimes": 1,
+        "mail": true,
+        "groups": [
+          "bachsiem",
+          "local",
+          "authentication_failures",
+          "bachsiem_scenario1"
+        ]
+      },
+      "agent": {
+        "id": "001",
+        "name": "bachsiem-victim-web",
+        "ip": "10.0.0.3"
+      },
+      "manager": {
+        "name": "bachsiem-siem"
+      },
+      "id": "1778842229.275572",
+      "previous_output": "2026-05-15T12:50:27.905623+02:00 bachsiem-victim-web sshd[3296]: Failed password...[truncated]",
+      "full_log": "2026-05-15T12:50:27.907411+02:00 bachsiem-victim-web sshd[3294]: Failed password...[truncated]",
+      "predecoder": {
+        "program_name": "sshd",
+        "timestamp": "2026-05-15T12:50:27.907411+02:00"
+      },
+      "decoder": {
+        "parent": "sshd",
+        "name": "sshd"
+      },
+      "data": {
+        "srcip": "10.0.0.2",
+        "srcport": "44202",
+        "dstuser": "testuser"
+      },
+      "location": "/var/log/auth.log"
+    },
+    "program": "active-response/bin/firewall-drop"
+  }
+}
+2026/05/15 12:50:32 active-response/bin/firewall-drop: Aborted
+2026/05/15 12:50:35 active-response/bin/firewall-drop: Starting
+2026/05/15 12:50:35 active-response/bin/firewall-drop:
+{
+  "version": 1,
+  "origin": {
+    "name": "node01",
+    "module": "wazuh-execd"
+  },
+  "command": "add",
+  "parameters": {
+    "extra_args": [],
+    "alert": {
+      "timestamp": "2026-05-15T12:50:31.841+0200",
+      "rule": {
+        "level": 12,
+        "description": "bachsiem: SSH brute force - 8+ failed logins in 2 min",
+        "id": "100210",
+        "mitre": {
+          "id": [
+            "T1110.001"
+          ],
+          "tactic": [
+            "Credential Access"
+          ],
+          "technique": [
+            "Password Guessing"
+          ]
+        },
+        "frequency": 8,
+        "firedtimes": 2,
+        "mail": true,
+        "groups": [
+          "bachsiem",
+          "local",
+          "authentication_failures",
+          "bachsiem_scenario1"
+        ]
+      },
+      "agent": {
+        "id": "001",
+        "name": "bachsiem-victim-web",
+        "ip": "10.0.0.3"
+      },
+      "manager": {
+        "name": "bachsiem-siem"
+      },
+      "id": "1778842231.284823",
+      "previous_output": "2026-05-15T12:50:31.225086+02:00 bachsiem-victim-web sshd[3296]: Failed password...[truncated]",
+      "full_log": "2026-05-15T12:50:31.236439+02:00 bachsiem-victim-web sshd[3294]: Failed password...[truncated]",
+      "predecoder": {
+        "program_name": "sshd",
+        "timestamp": "2026-05-15T12:50:31.236439+02:00"
+      },
+      "decoder": {
+        "parent": "sshd",
+        "name": "sshd"
+      },
+      "data": {
+        "srcip": "10.0.0.2",
+        "srcport": "44202",
+        "dstuser": "testuser"
+      },
+      "location": "/var/log/auth.log"
+    },
+    "program": "active-response/bin/firewall-drop"
+  }
+}
+2026/05/15 12:50:35 active-response/bin/firewall-drop: {"version":1,"origin":{"name":"firewall-drop","module":"active-response"},"command":"check_keys","parameters":{"keys":["10.0.0.2"]}}
+2026/05/15 12:50:35 active-response/bin/firewall-drop:
+{
+  "version": 1,
+  "origin": {
+    "name": "node01",
+    "module": "wazuh-execd"
+  },
+  "command": "abort",
+  "parameters": {
+    "extra_args": [],
+    "alert": {
+      "timestamp": "2026-05-15T12:50:31.841+0200",
+      "rule": {
+        "level": 12,
+        "description": "bachsiem: SSH brute force - 8+ failed logins in 2 min",
+        "id": "100210",
+        "mitre": {
+          "id": [
+            "T1110.001"
+          ],
+          "tactic": [
+            "Credential Access"
+          ],
+          "technique": [
+            "Password Guessing"
+          ]
+        },
+        "frequency": 8,
+        "firedtimes": 2,
+        "mail": true,
+        "groups": [
+          "bachsiem",
+          "local",
+          "authentication_failures",
+          "bachsiem_scenario1"
+        ]
+      },
+      "agent": {
+        "id": "001",
+        "name": "bachsiem-victim-web",
+        "ip": "10.0.0.3"
+      },
+      "manager": {
+        "name": "bachsiem-siem"
+      },
+      "id": "1778842231.284823",
+      "previous_output": "2026-05-15T12:50:31.225086+02:00 bachsiem-victim-web sshd[3296]: Failed password...[truncated]",
+      "full_log": "2026-05-15T12:50:31.236439+02:00 bachsiem-victim-web sshd[3294]: Failed password...[truncated]",
+      "predecoder": {
+        "program_name": "sshd",
+        "timestamp": "2026-05-15T12:50:31.236439+02:00"
+      },
+      "decoder": {
+        "parent": "sshd",
+        "name": "sshd"
+      },
+      "data": {
+        "srcip": "10.0.0.2",
+        "srcport": "44202",
+        "dstuser": "testuser"
+      },
+      "location": "/var/log/auth.log"
+    },
+    "program": "active-response/bin/firewall-drop"
+  }
+}
+2026/05/15 12:50:35 active-response/bin/firewall-drop: Aborted
+2026/05/15 12:50:38 active-response/bin/firewall-drop: Starting
+2026/05/15 12:50:38 active-response/bin/firewall-drop:
+{
+  "version": 1,
+  "origin": {
+    "name": "node01",
+    "module": "wazuh-execd"
+  },
+  "command": "add",
+  "parameters": {
+    "extra_args": [],
+    "alert": {
+      "timestamp": "2026-05-15T12:50:31.841+0200",
+      "rule": {
+        "level": 12,
+        "description": "bachsiem: SSH brute force - 8+ failed logins in 2 min",
+        "id": "100210",
+        "mitre": {
+          "id": [
+            "T1110.001"
+          ],
+          "tactic": [
+            "Credential Access"
+          ],
+          "technique": [
+            "Password Guessing"
+          ]
+        },
+        "frequency": 8,
+        "firedtimes": 2,
+        "mail": true,
+        "groups": [
+          "bachsiem",
+          "local",
+          "authentication_failures",
+          "bachsiem_scenario1"
+        ]
+      },
+      "agent": {
+        "id": "001",
+        "name": "bachsiem-victim-web",
+        "ip": "10.0.0.3"
+      },
+      "manager": {
+        "name": "bachsiem-siem"
+      },
+      "id": "1778842231.284823",
+      "previous_output": "2026-05-15T12:50:31.225086+02:00 bachsiem-victim-web sshd[3296]: Failed password...[truncated]",
+      "full_log": "2026-05-15T12:50:31.236439+02:00 bachsiem-victim-web sshd[3294]: Failed password...[truncated]",
+      "predecoder": {
+        "program_name": "sshd",
+        "timestamp": "2026-05-15T12:50:31.236439+02:00"
+      },
+      "decoder": {
+        "parent": "sshd",
+        "name": "sshd"
+      },
+      "data": {
+        "srcip": "10.0.0.2",
+        "srcport": "44202",
+        "dstuser": "testuser"
+      },
+      "location": "/var/log/auth.log"
+    },
+    "program": "active-response/bin/firewall-drop"
+  }
+}
+2026/05/15 12:50:38 active-response/bin/firewall-drop: {"version":1,"origin":{"name":"firewall-drop","module":"active-response"},"command":"check_keys","parameters":{"keys":["10.0.0.2"]}}
+2026/05/15 12:50:38 active-response/bin/firewall-drop:
+{
+  "version": 1,
+  "origin": {
+    "name": "node01",
+    "module": "wazuh-execd"
+  },
+  "command": "abort",
+  "parameters": {
+    "extra_args": [],
+    "alert": {
+      "timestamp": "2026-05-15T12:50:31.841+0200",
+      "rule": {
+        "level": 12,
+        "description": "bachsiem: SSH brute force - 8+ failed logins in 2 min",
+        "id": "100210",
+        "mitre": {
+          "id": [
+            "T1110.001"
+          ],
+          "tactic": [
+            "Credential Access"
+          ],
+          "technique": [
+            "Password Guessing"
+          ]
+        },
+        "frequency": 8,
+        "firedtimes": 2,
+        "mail": true,
+        "groups": [
+          "bachsiem",
+          "local",
+          "authentication_failures",
+          "bachsiem_scenario1"
+        ]
+      },
+      "agent": {
+        "id": "001",
+        "name": "bachsiem-victim-web",
+        "ip": "10.0.0.3"
+      },
+      "manager": {
+        "name": "bachsiem-siem"
+      },
+      "id": "1778842231.284823",
+      "previous_output": "2026-05-15T12:50:31.225086+02:00 bachsiem-victim-web sshd[3296]: Failed password...[truncated]",
+      "full_log": "2026-05-15T12:50:31.236439+02:00 bachsiem-victim-web sshd[3294]: Failed password...[truncated]",
+      "predecoder": {
+        "program_name": "sshd",
+        "timestamp": "2026-05-15T12:50:31.236439+02:00"
+      },
+      "decoder": {
+        "parent": "sshd",
+        "name": "sshd"
+      },
+      "data": {
+        "srcip": "10.0.0.2",
+        "srcport": "44202",
+        "dstuser": "testuser"
+      },
+      "location": "/var/log/auth.log"
+    },
+    "program": "active-response/bin/firewall-drop"
+  }
+}
+2026/05/15 12:50:38 active-response/bin/firewall-drop: Aborted
+2026/05/15 12:55:26 active-response/bin/firewall-drop: Starting
+2026/05/15 12:55:26 active-response/bin/firewall-drop:
+{
+  "version": 1,
+  "origin": {
+    "name": "node01",
+    "module": "wazuh-execd"
+  },
+  "command": "add",
+  "parameters": {
+    "extra_args": [],
+    "alert": {
+      "timestamp": "2026-05-15T12:55:26.085+0200",
+      "rule": {
+        "level": 12,
+        "description": "bachsiem: SSH brute force - 8+ failed logins in 2 min",
+        "id": "100210",
+        "mitre": {
+          "id": [
+            "T1110.001"
+          ],
+          "tactic": [
+            "Credential Access"
+          ],
+          "technique": [
+            "Password Guessing"
+          ]
+        },
+        "frequency": 8,
+        "firedtimes": 3,
+        "mail": true,
+        "groups": [
+          "bachsiem",
+          "local",
+          "authentication_failures",
+          "bachsiem_scenario1"
+        ]
+      },
+      "agent": {
+        "id": "001",
+        "name": "bachsiem-victim-web",
+        "ip": "10.0.0.3"
+      },
+      "manager": {
+        "name": "bachsiem-siem"
+      },
+      "id": "1778842526.343299",
+      "previous_output": "May 15 10:55:25 bachsiem-victim-web sshd[3543]: Failed password for testuser fro...[truncated]",
+      "full_log": "May 15 10:55:25 bachsiem-victim-web sshd[3542]: Failed password for testuser fro...[truncated]",
+      "predecoder": {
+        "program_name": "sshd",
+        "timestamp": "May 15 10:55:25",
+        "hostname": "bachsiem-victim-web"
+      },
+      "decoder": {
+        "parent": "sshd",
+        "name": "sshd"
+      },
+      "data": {
+        "srcip": "10.0.0.2",
+        "srcport": "45106",
+        "dstuser": "testuser"
+      },
+      "location": "journald"
+    },
+    "program": "active-response/bin/firewall-drop"
+  }
+}
+2026/05/15 12:55:26 active-response/bin/firewall-drop: {"version":1,"origin":{"name":"firewall-drop","module":"active-response"},"command":"check_keys","parameters":{"keys":["10.0.0.2"]}}
+2026/05/15 12:55:26 active-response/bin/firewall-drop:
+{
+  "version": 1,
+  "origin": {
+    "name": "node01",
+    "module": "wazuh-execd"
+  },
+  "command": "abort",
+  "parameters": {
+    "extra_args": [],
+    "alert": {
+      "timestamp": "2026-05-15T12:55:26.085+0200",
+      "rule": {
+        "level": 12,
+        "description": "bachsiem: SSH brute force - 8+ failed logins in 2 min",
+        "id": "100210",
+        "mitre": {
+          "id": [
+            "T1110.001"
+          ],
+          "tactic": [
+            "Credential Access"
+          ],
+          "technique": [
+            "Password Guessing"
+          ]
+        },
+        "frequency": 8,
+        "firedtimes": 3,
+        "mail": true,
+        "groups": [
+          "bachsiem",
+          "local",
+          "authentication_failures",
+          "bachsiem_scenario1"
+        ]
+      },
+      "agent": {
+        "id": "001",
+        "name": "bachsiem-victim-web",
+        "ip": "10.0.0.3"
+      },
+      "manager": {
+        "name": "bachsiem-siem"
+      },
+      "id": "1778842526.343299",
+      "previous_output": "May 15 10:55:25 bachsiem-victim-web sshd[3543]: Failed password for testuser fro...[truncated]",
+      "full_log": "May 15 10:55:25 bachsiem-victim-web sshd[3542]: Failed password for testuser fro...[truncated]",
+      "predecoder": {
+        "program_name": "sshd",
+        "timestamp": "May 15 10:55:25",
+        "hostname": "bachsiem-victim-web"
+      },
+      "decoder": {
+        "parent": "sshd",
+        "name": "sshd"
+      },
+      "data": {
+        "srcip": "10.0.0.2",
+        "srcport": "45106",
+        "dstuser": "testuser"
+      },
+      "location": "journald"
+    },
+    "program": "active-response/bin/firewall-drop"
+  }
+}
+2026/05/15 12:55:26 active-response/bin/firewall-drop: Aborted
+2026/05/15 12:55:26 active-response/bin/firewall-drop: Starting
+2026/05/15 12:55:26 active-response/bin/firewall-drop:
+{
+  "version": 1,
+  "origin": {
+    "name": "node01",
+    "module": "wazuh-execd"
+  },
+  "command": "add",
+  "parameters": {
+    "extra_args": [],
+    "alert": {
+      "timestamp": "2026-05-15T12:55:26.085+0200",
+      "rule": {
+        "level": 12,
+        "description": "bachsiem: SSH brute force - 8+ failed logins in 2 min",
+        "id": "100210",
+        "mitre": {
+          "id": [
+            "T1110.001"
+          ],
+          "tactic": [
+            "Credential Access"
+          ],
+          "technique": [
+            "Password Guessing"
+          ]
+        },
+        "frequency": 8,
+        "firedtimes": 3,
+        "mail": true,
+        "groups": [
+          "bachsiem",
+          "local",
+          "authentication_failures",
+          "bachsiem_scenario1"
+        ]
+      },
+      "agent": {
+        "id": "001",
+        "name": "bachsiem-victim-web",
+        "ip": "10.0.0.3"
+      },
+      "manager": {
+        "name": "bachsiem-siem"
+      },
+      "id": "1778842526.343299",
+      "previous_output": "May 15 10:55:25 bachsiem-victim-web sshd[3543]: Failed password for testuser fro...[truncated]",
+      "full_log": "May 15 10:55:25 bachsiem-victim-web sshd[3542]: Failed password for testuser fro...[truncated]",
+      "predecoder": {
+        "program_name": "sshd",
+        "timestamp": "May 15 10:55:25",
+        "hostname": "bachsiem-victim-web"
+      },
+      "decoder": {
+        "parent": "sshd",
+        "name": "sshd"
+      },
+      "data": {
+        "srcip": "10.0.0.2",
+        "srcport": "45106",
+        "dstuser": "testuser"
+      },
+      "location": "journald"
+    },
+    "program": "active-response/bin/firewall-drop"
+  }
+}
+2026/05/15 12:55:26 active-response/bin/firewall-drop: {"version":1,"origin":{"name":"firewall-drop","module":"active-response"},"command":"check_keys","parameters":{"keys":["10.0.0.2"]}}
+2026/05/15 12:55:26 active-response/bin/firewall-drop:
+{
+  "version": 1,
+  "origin": {
+    "name": "node01",
+    "module": "wazuh-execd"
+  },
+  "command": "abort",
+  "parameters": {
+    "extra_args": [],
+    "alert": {
+      "timestamp": "2026-05-15T12:55:26.085+0200",
+      "rule": {
+        "level": 12,
+        "description": "bachsiem: SSH brute force - 8+ failed logins in 2 min",
+        "id": "100210",
+        "mitre": {
+          "id": [
+            "T1110.001"
+          ],
+          "tactic": [
+            "Credential Access"
+          ],
+          "technique": [
+            "Password Guessing"
+          ]
+        },
+        "frequency": 8,
+        "firedtimes": 3,
+        "mail": true,
+        "groups": [
+          "bachsiem",
+          "local",
+          "authentication_failures",
+          "bachsiem_scenario1"
+        ]
+      },
+      "agent": {
+        "id": "001",
+        "name": "bachsiem-victim-web",
+        "ip": "10.0.0.3"
+      },
+      "manager": {
+        "name": "bachsiem-siem"
+      },
+      "id": "1778842526.343299",
+      "previous_output": "May 15 10:55:25 bachsiem-victim-web sshd[3543]: Failed password for testuser fro...[truncated]",
+      "full_log": "May 15 10:55:25 bachsiem-victim-web sshd[3542]: Failed password for testuser fro...[truncated]",
+      "predecoder": {
+        "program_name": "sshd",
+        "timestamp": "May 15 10:55:25",
+        "hostname": "bachsiem-victim-web"
+      },
+      "decoder": {
+        "parent": "sshd",
+        "name": "sshd"
+      },
+      "data": {
+        "srcip": "10.0.0.2",
+        "srcport": "45106",
+        "dstuser": "testuser"
+      },
+      "location": "journald"
+    },
+    "program": "active-response/bin/firewall-drop"
+  }
+}
+2026/05/15 12:55:26 active-response/bin/firewall-drop: Aborted
+2026/05/15 12:55:30 active-response/bin/firewall-drop: Starting
+2026/05/15 12:55:30 active-response/bin/firewall-drop:
+{
+  "version": 1,
+  "origin": {
+    "name": "node01",
+    "module": "wazuh-execd"
+  },
+  "command": "add",
+  "parameters": {
+    "extra_args": [],
+    "alert": {
+      "timestamp": "2026-05-15T12:55:30.090+0200",
+      "rule": {
+        "level": 12,
+        "description": "bachsiem: SSH brute force - 8+ failed logins in 2 min",
+        "id": "100210",
+        "mitre": {
+          "id": [
+            "T1110.001"
+          ],
+          "tactic": [
+            "Credential Access"
+          ],
+          "technique": [
+            "Password Guessing"
+          ]
+        },
+        "frequency": 8,
+        "firedtimes": 4,
+        "mail": true,
+        "groups": [
+          "bachsiem",
+          "local",
+          "authentication_failures",
+          "bachsiem_scenario1"
+        ]
+      },
+      "agent": {
+        "id": "001",
+        "name": "bachsiem-victim-web",
+        "ip": "10.0.0.3"
+      },
+      "manager": {
+        "name": "bachsiem-siem"
+      },
+      "id": "1778842530.357131",
+      "previous_output": "2026-05-15T12:55:29.872454+02:00 bachsiem-victim-web sshd[3543]: Failed password...[truncated]",
+      "full_log": "2026-05-15T12:55:29.874582+02:00 bachsiem-victim-web sshd[3542]: Failed password...[truncated]",
+      "predecoder": {
+        "program_name": "sshd",
+        "timestamp": "2026-05-15T12:55:29.874582+02:00"
+      },
+      "decoder": {
+        "parent": "sshd",
+        "name": "sshd"
+      },
+      "data": {
+        "srcip": "10.0.0.2",
+        "srcport": "45106",
+        "dstuser": "testuser"
+      },
+      "location": "/var/log/auth.log"
+    },
+    "program": "active-response/bin/firewall-drop"
+  }
+}
+2026/05/15 12:55:30 active-response/bin/firewall-drop: {"version":1,"origin":{"name":"firewall-drop","module":"active-response"},"command":"check_keys","parameters":{"keys":["10.0.0.2"]}}
+2026/05/15 12:55:30 active-response/bin/firewall-drop:
+{
+  "version": 1,
+  "origin": {
+    "name": "node01",
+    "module": "wazuh-execd"
+  },
+  "command": "abort",
+  "parameters": {
+    "extra_args": [],
+    "alert": {
+      "timestamp": "2026-05-15T12:55:30.090+0200",
+      "rule": {
+        "level": 12,
+        "description": "bachsiem: SSH brute force - 8+ failed logins in 2 min",
+        "id": "100210",
+        "mitre": {
+          "id": [
+            "T1110.001"
+          ],
+          "tactic": [
+            "Credential Access"
+          ],
+          "technique": [
+            "Password Guessing"
+          ]
+        },
+        "frequency": 8,
+        "firedtimes": 4,
+        "mail": true,
+        "groups": [
+          "bachsiem",
+          "local",
+          "authentication_failures",
+          "bachsiem_scenario1"
+        ]
+      },
+      "agent": {
+        "id": "001",
+        "name": "bachsiem-victim-web",
+        "ip": "10.0.0.3"
+      },
+      "manager": {
+        "name": "bachsiem-siem"
+      },
+      "id": "1778842530.357131",
+      "previous_output": "2026-05-15T12:55:29.872454+02:00 bachsiem-victim-web sshd[3543]: Failed password...[truncated]",
+      "full_log": "2026-05-15T12:55:29.874582+02:00 bachsiem-victim-web sshd[3542]: Failed password...[truncated]",
+      "predecoder": {
+        "program_name": "sshd",
+        "timestamp": "2026-05-15T12:55:29.874582+02:00"
+      },
+      "decoder": {
+        "parent": "sshd",
+        "name": "sshd"
+      },
+      "data": {
+        "srcip": "10.0.0.2",
+        "srcport": "45106",
+        "dstuser": "testuser"
+      },
+      "location": "/var/log/auth.log"
+    },
+    "program": "active-response/bin/firewall-drop"
+  }
+}
+2026/05/15 12:55:30 active-response/bin/firewall-drop: Aborted
+2026/05/15 12:55:30 active-response/bin/firewall-drop: Starting
+2026/05/15 12:55:30 active-response/bin/firewall-drop:
+{
+  "version": 1,
+  "origin": {
+    "name": "node01",
+    "module": "wazuh-execd"
+  },
+  "command": "add",
+  "parameters": {
+    "extra_args": [],
+    "alert": {
+      "timestamp": "2026-05-15T12:55:30.090+0200",
+      "rule": {
+        "level": 12,
+        "description": "bachsiem: SSH brute force - 8+ failed logins in 2 min",
+        "id": "100210",
+        "mitre": {
+          "id": [
+            "T1110.001"
+          ],
+          "tactic": [
+            "Credential Access"
+          ],
+          "technique": [
+            "Password Guessing"
+          ]
+        },
+        "frequency": 8,
+        "firedtimes": 4,
+        "mail": true,
+        "groups": [
+          "bachsiem",
+          "local",
+          "authentication_failures",
+          "bachsiem_scenario1"
+        ]
+      },
+      "agent": {
+        "id": "001",
+        "name": "bachsiem-victim-web",
+        "ip": "10.0.0.3"
+      },
+      "manager": {
+        "name": "bachsiem-siem"
+      },
+      "id": "1778842530.357131",
+      "previous_output": "2026-05-15T12:55:29.872454+02:00 bachsiem-victim-web sshd[3543]: Failed password...[truncated]",
+      "full_log": "2026-05-15T12:55:29.874582+02:00 bachsiem-victim-web sshd[3542]: Failed password...[truncated]",
+      "predecoder": {
+        "program_name": "sshd",
+        "timestamp": "2026-05-15T12:55:29.874582+02:00"
+      },
+      "decoder": {
+        "parent": "sshd",
+        "name": "sshd"
+      },
+      "data": {
+        "srcip": "10.0.0.2",
+        "srcport": "45106",
+        "dstuser": "testuser"
+      },
+      "location": "/var/log/auth.log"
+    },
+    "program": "active-response/bin/firewall-drop"
+  }
+}
+2026/05/15 12:55:30 active-response/bin/firewall-drop: {"version":1,"origin":{"name":"firewall-drop","module":"active-response"},"command":"check_keys","parameters":{"keys":["10.0.0.2"]}}
+2026/05/15 12:55:30 active-response/bin/firewall-drop:
+{
+  "version": 1,
+  "origin": {
+    "name": "node01",
+    "module": "wazuh-execd"
+  },
+  "command": "abort",
+  "parameters": {
+    "extra_args": [],
+    "alert": {
+      "timestamp": "2026-05-15T12:55:30.090+0200",
+      "rule": {
+        "level": 12,
+        "description": "bachsiem: SSH brute force - 8+ failed logins in 2 min",
+        "id": "100210",
+        "mitre": {
+          "id": [
+            "T1110.001"
+          ],
+          "tactic": [
+            "Credential Access"
+          ],
+          "technique": [
+            "Password Guessing"
+          ]
+        },
+        "frequency": 8,
+        "firedtimes": 4,
+        "mail": true,
+        "groups": [
+          "bachsiem",
+          "local",
+          "authentication_failures",
+          "bachsiem_scenario1"
+        ]
+      },
+      "agent": {
+        "id": "001",
+        "name": "bachsiem-victim-web",
+        "ip": "10.0.0.3"
+      },
+      "manager": {
+        "name": "bachsiem-siem"
+      },
+      "id": "1778842530.357131",
+      "previous_output": "2026-05-15T12:55:29.872454+02:00 bachsiem-victim-web sshd[3543]: Failed password...[truncated]",
+      "full_log": "2026-05-15T12:55:29.874582+02:00 bachsiem-victim-web sshd[3542]: Failed password...[truncated]",
+      "predecoder": {
+        "program_name": "sshd",
+        "timestamp": "2026-05-15T12:55:29.874582+02:00"
+      },
+      "decoder": {
+        "parent": "sshd",
+        "name": "sshd"
+      },
+      "data": {
+        "srcip": "10.0.0.2",
+        "srcport": "45106",
+        "dstuser": "testuser"
+      },
+      "location": "/var/log/auth.log"
+    },
+    "program": "active-response/bin/firewall-drop"
+  }
+}
+2026/05/15 12:55:30 active-response/bin/firewall-drop: Aborted

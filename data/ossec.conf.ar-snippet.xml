@@ -1,0 +1,25 @@
+<!--
+  Active-Response config block — appended inside <ossec_config> on the manager.
+  Per §12 of the runbook. Drops on scenarios 1/3/4 (rules 100210, 100230, 100240)
+  with 600s timeout, and the custom logger fires on all five scenarios for
+  mitigation-rate measurement.
+-->
+
+<command>
+  <name>bachsiem-ar-log</name>
+  <executable>bachsiem-ar-log.sh</executable>
+  <timeout_allowed>no</timeout_allowed>
+</command>
+
+<active-response>
+  <command>firewall-drop</command>
+  <location>local</location>
+  <rules_id>100210,100230,100240</rules_id>
+  <timeout>600</timeout>
+</active-response>
+
+<active-response>
+  <command>bachsiem-ar-log</command>
+  <location>local</location>
+  <rules_id>100210,100220,100230,100240,100250</rules_id>
+</active-response>

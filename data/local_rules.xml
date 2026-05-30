@@ -1,0 +1,53 @@
+<group name="bachsiem,local,">
+
+  <!-- (a) SSH brute force escalation: 8 failures from same IP in 120 s -->
+  <rule id="100210" level="12" frequency="8" timeframe="120">
+    <if_matched_sid>5760</if_matched_sid>
+    <same_source_ip />
+    <description>bachsiem: SSH brute force - 8+ failed logins in 2 min</description>
+    <mitre>
+      <id>T1110.001</id>
+    </mitre>
+    <group>authentication_failures,bachsiem_scenario1,</group>
+  </rule>
+
+  <!-- (b) Nmap recon via Suricata ET SCAN family -->
+  <rule id="100220" level="8">
+    <if_sid>86601</if_sid>
+    <field name="alert.signature" type="pcre2">ET SCAN</field>
+    <description>bachsiem: Nmap / scan activity detected by Suricata</description>
+    <mitre><id>T1046</id></mitre>
+    <group>recon,bachsiem_scenario2,</group>
+  </rule>
+
+  <!-- (c) SQLi via Suricata custom SID 9000001/9000002 -->
+  <rule id="100230" level="12">
+    <if_sid>86601</if_sid>
+    <field name="alert.signature" type="pcre2">BACHSIEM SQL</field>
+    <description>bachsiem: SQLMap-style SQL injection against DVWA</description>
+    <mitre><id>T1190</id></mitre>
+    <group>web,attack,bachsiem_scenario3,</group>
+  </rule>
+
+  <!-- (d) Suspicious post-exploit binary execution (curl|bash via auditd execve) -->
+  <rule id="100240" level="12">
+    <if_sid>80700</if_sid>
+    <field name="audit.exe" type="pcre2">/usr/bin/(bash|sh)$</field>
+    <field name="audit.command" type="pcre2">curl.*\|.*bash</field>
+    <description>bachsiem: curl-pipe-bash post-exploit execution</description>
+    <mitre><id>T1059.004</id></mitre>
+    <group>execution,bachsiem_scenario4,</group>
+  </rule>
+
+  <!-- (e) Privilege escalation - PwnKit CVE-2021-4034 / Baron Samedit CVE-2021-3156
+       substituted for Dirty COW. Triggers on pkexec invocation pattern or the
+       sudoedit overlong-argv signature in auth.log. -->
+  <rule id="100250" level="14">
+    <if_sid>5402,80700</if_sid>
+    <match>pkexec|sudoedit|cve-2021-4034</match>
+    <description>bachsiem: PwnKit/Baron-Samedit privilege escalation attempt</description>
+    <mitre><id>T1068</id></mitre>
+    <group>privilege_escalation,bachsiem_scenario5,</group>
+  </rule>
+
+</group>

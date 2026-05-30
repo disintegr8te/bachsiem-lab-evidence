@@ -1,0 +1,23 @@
+version: "3.9"
+services:
+  dvwa:
+    image: vulnerables/web-dvwa:latest
+    container_name: dvwa
+    ports:
+      - "10.0.0.3:80:80"
+    networks:
+      - lab
+    restart: unless-stopped
+
+  drupal:
+    image: vulhub/drupal:7.31
+    container_name: drupal
+    ports:
+      - "10.0.0.3:8080:80"
+    networks:
+      - lab
+    restart: unless-stopped
+
+networks:
+  lab:
+    driver: bridge

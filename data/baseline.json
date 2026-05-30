@@ -1,0 +1,9 @@
+{
+  "taken_at": "2026-05-15T10:29:24Z",
+  "wazuh_total_alerts": 439,
+  "suricata_event_count": 638,
+  "iptables_drop_chain_lines": {
+    "siem_INPUT": 8,
+    "victim_INPUT": 8
+  }
+}

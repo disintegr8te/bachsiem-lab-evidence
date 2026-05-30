@@ -1,0 +1,72 @@
+{
+  "timestamp": "2026-05-15T12:29:40.737999+0200",
+  "flow_id": 760245658258233,
+  "in_iface": "eth0",
+  "event_type": "flow",
+  "src_ip": "178.105.92.58",
+  "src_port": 56866,
+  "dest_ip": "185.207.105.38",
+  "dest_port": 123,
+  "proto": "UDP",
+  "app_proto": "ntp",
+  "flow": {
+    "pkts_toserver": 1,
+    "pkts_toclient": 1,
+    "bytes_toserver": 90,
+    "bytes_toclient": 90,
+    "start": "2026-05-15T12:24:34.766832+0200",
+    "end": "2026-05-15T12:24:34.767654+0200",
+    "age": 0,
+    "state": "established",
+    "reason": "timeout",
+    "alerted": false
+  }
+}
+{
+  "timestamp": "2026-05-15T12:29:40.738059+0200",
+  "flow_id": 2187974187226015,
+  "in_iface": "eth0",
+  "event_type": "flow",
+  "src_ip": "2a01:04f8:1c1c:e63b:0000:0000:0000:0001",
+  "src_port": 40462,
+  "dest_ip": "2a02:16d0:0000:0004:0000:0000:0000:0004",
+  "dest_port": 123,
+  "proto": "UDP",
+  "app_proto": "ntp",
+  "flow": {
+    "pkts_toserver": 1,
+    "pkts_toclient": 1,
+    "bytes_toserver": 110,
+    "bytes_toclient": 110,
+    "start": "2026-05-15T12:24:31.050675+0200",
+    "end": "2026-05-15T12:24:31.061776+0200",
+    "age": 0,
+    "state": "established",
+    "reason": "timeout",
+    "alerted": false
+  }
+}
+{
+  "timestamp": "2026-05-15T12:29:43.723682+0200",
+  "flow_id": 776604236665573,
+  "in_iface": "eth0",
+  "event_type": "flow",
+  "src_ip": "178.105.92.58",
+  "src_port": 37514,
+  "dest_ip": "185.125.190.56",
+  "dest_port": 123,
+  "proto": "UDP",
+  "app_proto": "ntp",
+  "flow": {
+    "pkts_toserver": 1,
+    "pkts_toclient": 1,
+    "bytes_toserver": 90,
+    "bytes_toclient": 90,
+    "start": "2026-05-15T12:24:34.967249+0200",
+    "end": "2026-05-15T12:24:34.990478+0200",
+    "age": 0,
+    "state": "established",
+    "reason": "timeout",
+    "alerted": false
+  }
+}

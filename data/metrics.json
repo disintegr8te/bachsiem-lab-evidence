@@ -1,0 +1,320 @@
+{
+  "summary": {
+    "total_attempts": 5,
+    "tp_total": 4,
+    "tpr_macro": 0.8,
+    "fpr": 0.0029295774647887323,
+    "mttd_median_seconds": 167.444369,
+    "mitigation_rate": 0.994884301945155,
+    "ar_latency_seconds_median": 17.778,
+    "lab_window": [
+      "2026-05-15T12:29:39.808000+02:00",
+      "2026-05-15T13:47:10.019000+02:00"
+    ],
+    "ar_latency_seconds_mean": 19.356,
+    "ar_latency_samples": 16788
+  },
+  "per_scenario": {
+    "scenario1": {
+      "window": [
+        "2026-05-15T10:50:25+00:00",
+        "2026-05-15T11:12:09+00:00"
+      ],
+      "tp_alerts": 47,
+      "detected": true,
+      "mttd_seconds": 451.23
+    },
+    "scenario2": {
+      "window": [
+        "2026-05-15T11:13:20+00:00",
+        "2026-05-15T11:17:36+00:00"
+      ],
+      "tp_alerts": 12,
+      "detected": true,
+      "mttd_seconds": 109.149811
+    },
+    "scenario3": {
+      "window": [
+        "2026-05-15T11:19:25+00:00",
+        "2026-05-15T11:25:00+00:00"
+      ],
+      "tp_alerts": 8578,
+      "detected": true,
+      "mttd_seconds": 163.999703
+    },
+    "scenario4": {
+      "window": [
+        "2026-05-15T11:30:14+00:00",
+        "2026-05-15T11:39:23+00:00"
+      ],
+      "tp_alerts": 0,
+      "detected": false,
+      "mttd_seconds": null
+    },
+    "scenario5": {
+      "window": [
+        "2026-05-15T11:40:51+00:00",
+        "2026-05-15T11:47:26+00:00"
+      ],
+      "tp_alerts": 21,
+      "detected": true,
+      "mttd_seconds": 170.889035
+    }
+  },
+  "false_positive_examples": [
+    {
+      "ts": "2026-05-15T12:48:34.734+0200",
+      "rule_id": "510",
+      "desc": "Host-based anomaly detection event (rootcheck).",
+      "level": 7
+    },
+    {
+      "ts": "2026-05-15T12:48:34.735+0200",
+      "rule_id": "510",
+      "desc": "Host-based anomaly detection event (rootcheck).",
+      "level": 7
+    },
+    {
+      "ts": "2026-05-15T12:48:35.154+0200",
+      "rule_id": "533",
+      "desc": "Listened ports status (netstat) changed (new port opened or closed).",
+      "level": 7
+    },
+    {
+      "ts": "2026-05-15T12:49:45.030+0200",
+      "rule_id": "510",
+      "desc": "Host-based anomaly detection event (rootcheck).",
+      "level": 7
+    },
+    {
+      "ts": "2026-05-15T12:49:45.038+0200",
+      "rule_id": "510",
+      "desc": "Host-based anomaly detection event (rootcheck).",
+      "level": 7
+    },
+    {
+      "ts": "2026-05-15T12:49:47.794+0200",
+      "rule_id": "533",
+      "desc": "Listened ports status (netstat) changed (new port opened or closed).",
+      "level": 7
+    },
+    {
+      "ts": "2026-05-15T13:13:09.636+0200",
+      "rule_id": "510",
+      "desc": "Host-based anomaly detection event (rootcheck).",
+      "level": 7
+    },
+    {
+      "ts": "2026-05-15T13:13:09.636+0200",
+      "rule_id": "510",
+      "desc": "Host-based anomaly detection event (rootcheck).",
+      "level": 7
+    },
+    {
+      "ts": "2026-05-15T13:13:09.636+0200",
+      "rule_id": "510",
+      "desc": "Host-based anomaly detection event (rootcheck).",
+      "level": 7
+    },
+    {
+      "ts": "2026-05-15T13:13:09.636+0200",
+      "rule_id": "510",
+      "desc": "Host-based anomaly detection event (rootcheck).",
+      "level": 7
+    },
+    {
+      "ts": "2026-05-15T13:13:09.928+0200",
+      "rule_id": "533",
+      "desc": "Listened ports status (netstat) changed (new port opened or closed).",
+      "level": 7
+    },
+    {
+      "ts": "2026-05-15T13:19:13.568+0200",
+      "rule_id": "510",
+      "desc": "Host-based anomaly detection event (rootcheck).",
+      "level": 7
+    },
+    {
+      "ts": "2026-05-15T13:19:13.569+0200",
+      "rule_id": "510",
+      "desc": "Host-based anomaly detection event (rootcheck).",
+      "level": 7
+    },
+    {
+      "ts": "2026-05-15T13:19:14.808+0200",
+      "rule_id": "533",
+      "desc": "Listened ports status (netstat) changed (new port opened or closed).",
+      "level": 7
+    },
+    {
+      "ts": "2026-05-15T13:19:22.362+0200",
+      "rule_id": "510",
+      "desc": "Host-based anomaly detection event (rootcheck).",
+      "level": 7
+    },
+    {
+      "ts": "2026-05-15T13:19:22.368+0200",
+      "rule_id": "510",
+      "desc": "Host-based anomaly detection event (rootcheck).",
+      "level": 7
+    },
+    {
+      "ts": "2026-05-15T13:25:56.618+0200",
+      "rule_id": "510",
+      "desc": "Host-based anomaly detection event (rootcheck).",
+      "level": 7
+    },
+    {
+      "ts": "2026-05-15T13:25:56.618+0200",
+      "rule_id": "510",
+      "desc": "Host-based anomaly detection event (rootcheck).",
+      "level": 7
+    },
+    {
+      "ts": "2026-05-15T13:25:56.618+0200",
+      "rule_id": "510",
+      "desc": "Host-based anomaly detection event (rootcheck).",
+      "level": 7
+    },
+    {
+      "ts": "2026-05-15T13:25:56.618+0200",
+      "rule_id": "510",
+      "desc": "Host-based anomaly detection event (rootcheck).",
+      "level": 7
+    }
+  ],
+  "active_response": {
+    "ar_triggers": 16811,
+    "ar_successes": 16725,
+    "mitigation_rate": 0.994884301945155,
+    "examples": [
+      {
+        "ts": "2026-05-15T10:50:29.819Z",
+        "rule": "100210",
+        "srcip": "10.0.0.2",
+        "success": 1
+      },
+      {
+        "ts": "2026-05-15T10:50:32.834Z",
+        "rule": "100210",
+        "srcip": "10.0.0.2",
+        "success": 1
+      },
+      {
+        "ts": "2026-05-15T10:50:35.850Z",
+        "rule": "100210",
+        "srcip": "10.0.0.2",
+        "success": 1
+      },
+      {
+        "ts": "2026-05-15T10:50:38.867Z",
+        "rule": "100210",
+        "srcip": "10.0.0.2",
+        "success": 1
+      },
+      {
+        "ts": "2026-05-15T10:55:26.104Z",
+        "rule": "100210",
+        "srcip": "10.0.0.2",
+        "success": 0
+      },
+      {
+        "ts": "2026-05-15T10:55:26.120Z",
+        "rule": "100210",
+        "srcip": "10.0.0.2",
+        "success": 0
+      },
+      {
+        "ts": "2026-05-15T10:55:30.110Z",
+        "rule": "100210",
+        "srcip": "10.0.0.2",
+        "success": 0
+      },
+      {
+        "ts": "2026-05-15T10:55:30.126Z",
+        "rule": "100210",
+        "srcip": "10.0.0.2",
+        "success": 0
+      },
+      {
+        "ts": "2026-05-15T10:55:34.216Z",
+        "rule": "100210",
+        "srcip": "10.0.0.2",
+        "success": 0
+      },
+      {
+        "ts": "2026-05-15T10:55:34.233Z",
+        "rule": "100210",
+        "srcip": "10.0.0.2",
+        "success": 0
+      },
+      {
+        "ts": "2026-05-15T10:55:38.113Z",
+        "rule": "100210",
+        "srcip": "10.0.0.2",
+        "success": 0
+      },
+      {
+        "ts": "2026-05-15T10:55:38.128Z",
+        "rule": "100210",
+        "srcip": "10.0.0.2",
+        "success": 0
+      },
+      {
+        "ts": "2026-05-15T10:55:40.178Z",
+        "rule": "100210",
+        "srcip": "10.0.0.2",
+        "success": 0
+      },
+      {
+        "ts": "2026-05-15T10:55:40.196Z",
+        "rule": "100210",
+        "srcip": "10.0.0.2",
+        "success": 0
+      },
+      {
+        "ts": "2026-05-15T10:55:46.112Z",
+        "rule": "100210",
+        "srcip": "10.0.0.2",
+        "success": 0
+      },
+      {
+        "ts": "2026-05-15T10:55:46.128Z",
+        "rule": "100210",
+        "srcip": "10.0.0.2",
+        "success": 0
+      },
+      {
+        "ts": "2026-05-15T10:56:16.142Z",
+        "rule": "100210",
+        "srcip": "10.0.0.2",
+        "success": 0
+      },
+      {
+        "ts": "2026-05-15T10:56:16.157Z",
+        "rule": "100210",
+        "srcip": "10.0.0.2",
+        "success": 0
+      },
+      {
+        "ts": "2026-05-15T10:56:18.155Z",
+        "rule": "100210",
+        "srcip": "10.0.0.2",
+        "success": 0
+      },
+      {
+        "ts": "2026-05-15T10:56:18.172Z",
+        "rule": "100210",
+        "srcip": "10.0.0.2",
+        "success": 0
+      }
+    ]
+  },
+  "definitions": {
+    "tp": "Wazuh alert with rule.groups bachsiem_scenarioN inside scenario N window",
+    "fp": "Any Wazuh alert with rule.level >= 7 outside every scenario window",
+    "fn": "Scenario whose window produced zero bachsiem_scenarioN alerts",
+    "mttd": "Median (wazuh_alert_ts - earliest_suricata_or_window_start) per scenario",
+    "mitigation_rate": "bachsiem-ar.log success:1 / total triggers inside scenario windows"
+  }
+}

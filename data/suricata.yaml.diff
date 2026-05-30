@@ -1,0 +1,46 @@
+--- /etc/suricata/suricata.yaml.orig	2026-05-15 12:12:33.663001391 +0200
++++ /etc/suricata/suricata.yaml	2026-05-15 12:12:56.766126350 +0200
+@@ -15,7 +15,7 @@
+ vars:
+   # more specific is better for alert accuracy and performance
+   address-groups:
+-    HOME_NET: "[192.168.0.0/16,10.0.0.0/8,172.16.0.0/12]"
++    HOME_NET: "[10.0.0.0/24]"
+     #HOME_NET: "[192.168.0.0/16]"
+     #HOME_NET: "[10.0.0.0/8]"
+     #HOME_NET: "[172.16.0.0/12]"
+@@ -626,7 +626,7 @@
+ 
+ # Linux high speed capture support
+ af-packet:
+-  - interface: eth0
++  - interface: enp7s0
+     # Number of receive threads. "auto" uses the number of cores
+     #threads: auto
+     # Default clusterid. AF_PACKET will load balance packets based on flow.
+@@ -826,7 +826,7 @@
+ 
+ # Cross platform libpcap capture support
+ pcap:
+-  - interface: eth0
++  - interface: enp7s0
+     # On Linux, pcap will try to use mmap'ed capture and will use "buffer-size"
+     # as total memory used by the ring. So set this to something bigger
+     # than 1% of your bandwidth.
+@@ -2058,7 +2058,7 @@
+ # PF_RING configuration: for use with native PF_RING support
+ # for more info see http://www.ntop.org/products/pf_ring/
+ pfring:
+-  - interface: eth0
++  - interface: enp7s0
+     # Number of receive threads. If set to 'auto' Suricata will first try
+     # to use CPU (core) count and otherwise RSS queue count.
+     threads: auto
+@@ -2232,6 +2232,7 @@
+ 
+ rule-files:
+   - suricata.rules
++  - bachsiem.rules
+ 
+ ##
+ ## Auxiliary configuration files.
